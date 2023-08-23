@@ -3,28 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>Odin's Recipes</title>
 </head>
 
-<body>
+<body id="body-color">
+
     
-    <!--Think of borders or some type of design to make landing page appealing-->
-    <h1>Odin's Reciepes</h1>
+        <!--Think of borders or some type of design to make landing page appealing-->
+        <h1>Menu</h1>
 
-    <p>Being an adult is tough, especially if you are a parent. We know that eating healthy is an integral part for our bodies to grow especially in our little ones. With these quick dinner options, this will make dinner time easy while getting back to the things that matter.</p>
+        <img class="logo" src="images/chef-hat.jpg" alt="chef-hat-logo">
 
-    <!--In this section maybe put a general image or gif-->
+        <p>Being an adult is tough, especially if you are a parent. We know that eating healthy is an integral part for our bodies to grow especially in our little ones. With these quick dinner options, this will make dinner time easy while getting back to the things that matter.</p>
+
+        <!--In this section maybe put a general image or gif-->
+        
+        <div class="links">
+
+            <a href="recipes/chicken-rice-bowl.html">Chicken Rice Bowl</a>
+            <a href="recipes/burger.html">Scrum-Delicious Burgers</a>
+            <a href="recipes/chicken-pot-pie.html">Chicken Pot Pie</a>
+            <a href="recipes/chicken-spanish-cauliflower.html">Chicken & Spanish Cauliflower</a>
+            <a href="recipes/curry.html">Sausage Curry</a>
+
+        </div>
     
-    <div class="links">
 
-        <a href="recipes/chicken-rice-bowl.html">Chicken Rice Bowl</a>
-        <a href="recipes/burger.html">Scrum-Delicious Burgers</a>
-        <a href="recipes/chicken-pot-pie.html">Chicken Pot Pie</a>
-        <a href="recipes/chicken-spanish-cauliflower.html">Chicken & Spanish Cauliflower</a>
-        <a href="recipes/curry.html">Sausage Curry</a>
+        <div class="container">
 
-    </div>
+        <h3 class="questions">Questions and Recomandations</h3>
 
+        <p>If you have any questions or recomandations for any of the recipes or would like to add your own recipe to our site, fill out the form and we will get back to you within the day</p>
+
+
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="reason">Reasoning</label>
+              <select id="question-sec" name="question-section">
+                <option value="questions">Question</option>
+                <option value="concern">Concern</option>
+                <option value="recipe">Recipe</option>
+              </select>
+
+              <label for="email">Email</label>
+              <input type="text" id="email1" placeholder="Your email here">
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+    
 
 </body>
 </html>
